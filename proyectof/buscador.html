@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda de Libros</title>
+    <link rel="stylesheet" href="stylesB.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./producto.html">Productos</a></li>
+          <li><a href="./buscador.html">Buscar</a></li>
+        </ul>
+      </nav>
+      <img
+        src="https://thumbs.dreamstime.com/b/libros-de-biblioteca-en-banner-agrupados-f%C3%A1cilmente-164595798.jpg"
+        alt="Imagen Header"
+      />
+    </header>
+
+    <main>
+      <section id="buscador">
+        <h2>Buscador</h2>
+        <form id="search-form">
+          <label for="search-category">Categoría:</label>
+          <select id="search-category" name="category">
+            <option value="">Todas</option>
+            <option value="fantasia">Fantasía</option>
+            <option value="misterio">Misterio</option>
+            <option value="aventura">Aventura</option>
+            <option value="ciencia ficcion">Ciencia Ficción</option>
+          </select>
+          <label for="search-availability">Disponibilidad:</label>
+          <select id="search-availability" name="availability">
+            <option value="">Todas</option>
+            <option value="true">Disponible</option>
+            <option value="false">No disponible</option>
+          </select>
+          <label for="search-name">Nombre del libro:</label>
+          <input type="text" id="search-name" name="name" />
+          <button type="submit">Buscar</button>
+          <button type="reset" id="clear-button">Limpiar</button>
+        </form>
+      </section>
+
+      <section id="resultados">
+        <h2>Resultados de la búsqueda</h2>
+        <div id="search-results"></div>
+      </section>
+    </main>
+    <section id="footer">
+      <footer>
+        <p>&copy; 2024 Tienda de Libros</p>
+      </footer>
+    </section>
+
+    <script src="mainB.js"></script>
+  </body>
+</html>
